@@ -10,10 +10,15 @@ Here's a detailed guide to help you through the process:
 1. Log in to your AWS Management Console.
 2. Navigate to Lightsail.
 3. Create an instance:
+    
     - Choose the region where you want your instance to be located.
+    
     - Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (Here Wordpress is used ).
+    
     - Choose an instance plan based on your needs.
+    
     - Name your instance (e.g., webserver-1).
+    
     - Create the instance.
 
       **Screenshots** :
@@ -26,7 +31,9 @@ Here's a detailed guide to help you through the process:
 4. Repeat the process for the second instance (e.g., webserver-2).
 
 **Step 2**: Configure Your Web Servers
+    
     - Connect to each instance via SSH from the Lightsail console.
+    
     - Set up your web server (wordpress) and deploy your application or website on both instances. Ensure both servers serve the same content.
   
 ## 2. Set Up a Load Balancer on Lightsail
@@ -37,7 +44,9 @@ Here's a detailed guide to help you through the process:
 2. Create a load balancer:
    
     - Name your load balancer (e.g., my-load-balancer).
+    
     - Choose the region where your instances are located.
+    
     - Create the load balancer.
 
       **Screenshots** :
@@ -61,7 +70,9 @@ Here's a detailed guide to help you through the process:
 1. In the Lightsail console, navigate to your load balancer's management page.
 2. Click on the "Certificates" tab.
 3. Request a new certificate:
+    
     - Enter your domain name.
+    
     - Add any additional domain names if needed (e.g., www.yourdomain.com).
 
       **Screenshots**:
@@ -97,22 +108,32 @@ Here's a detailed guide to help you through the process:
    **Screenshots**:
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/47260df8-3d68-4944-bc55-75a15132d869)
 
-5. Add an A record to point your domain to the Lightsail load balancer:
+4. Add an A record to point your domain to the Lightsail load balancer:
+   
        - In the "DNS zone" management page, click on "Add record".
+   
        - Record type: Select "A".
+   
        - Subdomain: Leave it blank (or enter @).
+   
        - Resolves to: Paste the DNS name of your Lightsail load balancer.
+   
        - TTL: Set an appropriate value (e.g., 300 seconds).
+   
        - Click "Save".
 
    **Screenshots**:
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/8b16ae49-ef48-4c27-9792-96cf29d6b2a3)
 
    
-7. Update your domain registrar's nameservers to use Lightsail's nameservers:
-       -Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
+5. Update your domain registrar's nameservers to use Lightsail's nameservers:
+   
+       - Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
+   
        - Find the DNS or Nameserver settings for your domain.
+   
        - Replace the current nameservers with the ones provided by Lightsail. You can find these in the "DNS zone" management page under "Nameservers".
+   
        - Save the changes.
 
    Screenshots:
@@ -125,7 +146,7 @@ Here's a detailed guide to help you through the process:
 3. Verify that your website is accessible and that the load balancer is distributing traffic between your two instances.
 4. Ensure the site is accessible over HTTPS and that the SSL certificate is properly configured
 
-   Final Result ScreenShots:
+   Final Result ScreenShots (Wordpress Webserver):
    
    **https://www.amasun.in** : 
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/11b00240-b308-470c-8070-f5aa4b3bbf0c)
