@@ -10,7 +10,6 @@ Here's a detailed guide to help you through the process:
 1. Log in to your AWS Management Console.
 2. Navigate to Lightsail.
 3. Create an instance:
-   
     - Choose the region where you want your instance to be located.
     - Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (Here Wordpress is used ).
     - Choose an instance plan based on your needs.
@@ -27,7 +26,6 @@ Here's a detailed guide to help you through the process:
 4. Repeat the process for the second instance (e.g., webserver-2).
 
 **Step 2**: Configure Your Web Servers
-
     - Connect to each instance via SSH from the Lightsail console.
     - Set up your web server (wordpress) and deploy your application or website on both instances. Ensure both servers serve the same content.
   
@@ -100,7 +98,6 @@ Here's a detailed guide to help you through the process:
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/47260df8-3d68-4944-bc55-75a15132d869)
 
 5. Add an A record to point your domain to the Lightsail load balancer:
-   
         - In the "DNS zone" management page, click on "Add record".
         - Record type: Select "A".
         - Subdomain: Leave it blank (or enter @).
@@ -113,7 +110,6 @@ Here's a detailed guide to help you through the process:
 
    
 7. Update your domain registrar's nameservers to use Lightsail's nameservers:
-   
         - Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
         - Find the DNS or Nameserver settings for your domain.
         - Replace the current nameservers with the ones provided by Lightsail. You can find these in the "DNS zone" management page under "Nameservers".
