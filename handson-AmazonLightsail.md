@@ -98,22 +98,22 @@ Here's a detailed guide to help you through the process:
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/47260df8-3d68-4944-bc55-75a15132d869)
 
 5. Add an A record to point your domain to the Lightsail load balancer:
-        - In the "DNS zone" management page, click on "Add record".
-        - Record type: Select "A".
-        - Subdomain: Leave it blank (or enter @).
-        - Resolves to: Paste the DNS name of your Lightsail load balancer.
-        - TTL: Set an appropriate value (e.g., 300 seconds).
-        - Click "Save".
+       - In the "DNS zone" management page, click on "Add record".
+       - Record type: Select "A".
+       - Subdomain: Leave it blank (or enter @).
+       - Resolves to: Paste the DNS name of your Lightsail load balancer.
+       - TTL: Set an appropriate value (e.g., 300 seconds).
+       - Click "Save".
 
    **Screenshots**:
    ![image](https://github.com/AmalSunny992/AWS/assets/169422802/8b16ae49-ef48-4c27-9792-96cf29d6b2a3)
 
    
 7. Update your domain registrar's nameservers to use Lightsail's nameservers:
-        - Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
-        - Find the DNS or Nameserver settings for your domain.
-        - Replace the current nameservers with the ones provided by Lightsail. You can find these in the "DNS zone" management page under "Nameservers".
-        - Save the changes.
+       -Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
+       - Find the DNS or Nameserver settings for your domain.
+       - Replace the current nameservers with the ones provided by Lightsail. You can find these in the "DNS zone" management page under "Nameservers".
+       - Save the changes.
 
    Screenshots:
       ![image](https://github.com/AmalSunny992/AWS/assets/169422802/f1e03da5-d89e-4fb2-84f3-8504892e7a13)
