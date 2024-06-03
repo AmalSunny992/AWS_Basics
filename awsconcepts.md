@@ -235,35 +235,4 @@ Switch to the updated context:
 
 kubectl config use-context arn:aws:eks:<region-name>:<arn-id>:cluster/<cluster-name>
 
-## Tips & Tricks
-1. Cost Management:
-AWS Cost Explorer: Utilize AWS Cost Explorer to visualize and understand your AWS spending patterns. Analyze costs by service or region, enabling effective budget management.
 
-Billing Alerts: Set up billing alerts to receive notifications when your AWS costs exceed predefined thresholds. This proactive approach helps you stay within budget limits.
-
-2. Security Best Practices:
-Multi-Factor Authentication (MFA): Enable MFA for enhanced security. MFA adds an extra layer of protection to your AWS account by requiring an additional verification step.
-
-Regular Policy Reviews: Regularly review and update IAM policies. Ensure permissions are correctly assigned and remove unnecessary access to maintain a secure environment.
-
-3. Performance Optimization:
-Amazon CloudFront: Implement Amazon CloudFront as your Content Delivery Network (CDN) solution. CloudFront distributes content globally with low latency, ensuring faster load times for users.
-
-Auto Scaling: Leverage AWS Auto Scaling to automatically adjust the number of instances in your application. Scale your resources based on demand, optimizing performance and reducing costs during low traffic periods.
-
-4. Resource Tagging:
-Tagging Strategy: Develop a consistent tagging strategy for your AWS resources. Tags help in organizing resources, managing costs, and ensuring security compliance.
-
-Automate Tagging: Automate resource tagging using AWS Lambda functions or AWS Config rules. Consistent tagging simplifies resource tracking and management.
-
-5. Organize Resources with Tags:
-Use tags to label and organize your AWS resources effectively. Tags are key-value pairs that can be attached to most AWS resources, allowing you to categorize and manage resources based on their purpose, owner, or any other criteria.
-
-6. Automate Everything:
-Use AWS CloudFormation templates or AWS CDK (Cloud Development Kit) to automate the provisioning of resources. Infrastructure as Code (IaC) practices help in versioning, replicability, and disaster recovery.
-
-7. Set Up Billing Alarms:
-Avoid unexpected charges by setting up billing alarms in AWS Budgets. You can receive alerts when your costs exceed a predefined threshold, helping you keep track of your expenses.
-
-8. Plan for Disaster Recovery:
-Implement disaster recovery plans using services like AWS Backup and AWS Disaster Recovery. Regularly test your recovery processes to ensure that you can quickly restore services in case of failures.
