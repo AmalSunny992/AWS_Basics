@@ -5,44 +5,52 @@ Amazon Web Services (AWS) is a leading cloud service provider that offers a wide
 Region: A geographic area that consists of multiple Availability Zones. Each AWS region is a separate geographic area, isolated from others, and is designed to provide high availability and low latency.
 
 Availability Zone (AZ): A data center or facility within an AWS region. AZs are interconnected but physically separate from each other, providing redundancy and fault tolerance.
+
 ## 2. EC2 (Elastic Compute Cloud)
 EC2 Instance: Virtual machines that you can rent on AWS. They vary in terms of computing power, memory, and storage capacity to meet different application requirements.
 
 AMI (Amazon Machine Image): A pre-configured virtual machine image used to create EC2 instances.
 
 Security Groups: Virtual firewalls that control inbound and outbound traffic to EC2 instances.
+
 ## 3. S3 (Simple Storage Service)
 S3 Bucket: A container for storing data objects (files) in S3. Buckets have unique names and are used to organize and manage data.
 
 Objects: The data files stored in S3 buckets. Each object consists of data, a key (unique within a bucket), and metadata.
+
 ## 4. IAM (Identity and Access Management)
 IAM User: An individual or system that interacts with AWS resources. Each user has its own set of credentials and permissions.
 
 IAM Role: A set of permissions that define what actions an entity can perform on AWS resources. Roles can be assumed by EC2 instances, Lambda functions, etc.
 
 Policies: JSON documents that define permissions for users, groups, and roles.
+
 ## 5. RDS (Relational Database Service)
 RDS Instance: Managed relational database instances (e.g., MySQL, PostgreSQL, Oracle) that are scalable and highly available.
 
 DB Snapshots: Point-in-time backups of an RDS instance, used for data recovery and replication.
 
 Multi-AZ Deployment: A configuration that replicates the database across multiple Availability Zones for high availability.
+
 ## 6. VPC (Virtual Private Cloud)
 VPC: A logically isolated section of the AWS cloud where you can launch AWS resources. It provides control over network configuration and security.
 
 Subnet: A range of IP addresses in your VPC. Subnets are associated with specific Availability Zones.
 
 Route Table: A set of rules that determine where network traffic is directed within a VPC.
+
 ## 7. Lambda
 AWS Lambda: A serverless computing service that lets you run code in response to events without provisioning or managing servers.
 
 Event Sources: Triggers that invoke Lambda functions, such as API Gateway, S3, or CloudWatch Events.
 
 Function: The code you want to execute when a Lambda is triggered.
+
 ## 8. Elastic Load Balancing (ELB)
 ELB: A service that distributes incoming traffic across multiple EC2 instances for improved availability and fault tolerance.
 
 Load Balancer Types: Classic Load Balancer, Application Load Balancer (ALB), Network Load Balancer (NLB).
+
 ## 9. Amazon Route 53
 Amazon Route 53: Route 53 is a scalable domain name system (DNS) web service that allows you to register domain names and route internet traffic to the appropriate resources, such as EC2 instances, S3 buckets, or load balancers.
 
