@@ -10,16 +10,16 @@ Here's a detailed guide to help you through the process:
 1. Log in to your AWS Management Console.
 2. Navigate to Lightsail.
 3. Create an instance:
-  - Choose the region where you want your instance to be located.
-  - Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (e.g., LAMP, Nginx).
-  - Choose an instance plan based on your needs.
-  - Name your instance (e.g., webserver-1).
-  - Create the instance.
+    - Choose the region where you want your instance to be located.
+    - Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (e.g., LAMP, Nginx).
+    - Choose an instance plan based on your needs.
+    - Name your instance (e.g., webserver-1).
+    - Create the instance.
 4. Repeat the process for the second instance (e.g., webserver-2).
 
 **Step 2**: Configure Your Web Servers
-  - Connect to each instance via SSH from the Lightsail console.
-  - Set up your web server (e.g., Apache or Nginx) and deploy your application or website on both instances. Ensure both servers serve the same content.
+    - Connect to each instance via SSH from the Lightsail console.
+    - Set up your web server (e.g., Apache or Nginx) and deploy your application or website on both instances. Ensure both servers serve the same content.
 
 ## 2. Set Up a Load Balancer on Lightsail
 
@@ -27,9 +27,9 @@ Here's a detailed guide to help you through the process:
 
 1. In the Lightsail console, go to the Networking tab.
 2. Create a load balancer:
-  - Name your load balancer (e.g., my-load-balancer).
-  - Choose the region where your instances are located.
-  - Create the load balancer.
+    - Name your load balancer (e.g., my-load-balancer).
+    - Choose the region where your instances are located.
+    - Create the load balancer.
 
 **Step 2**: Attach Instances to the Load Balancer
 
@@ -43,8 +43,8 @@ Here's a detailed guide to help you through the process:
 1. In the Lightsail console, navigate to your load balancer's management page.
 2. Click on the "Certificates" tab.
 3. Request a new certificate:
-  - Enter your domain name.
-  - Add any additional domain names if needed (e.g., www.yourdomain.com).
+    - Enter your domain name.
+    - Add any additional domain names if needed (e.g., www.yourdomain.com).
 
 **Step 2**: Validate the Domain
 1. Follow the instructions to validate your domain. This typically involves adding a CNAME record to your domain's DNS settings.
@@ -66,10 +66,10 @@ Here's a detailed guide to help you through the process:
 1. Log in to your domain registrar's account (e.g., GoDaddy, Namecheap).
 2. Find the DNS settings for your domain.
 3. Create an A record:
-  - Name: @ (or leave it blank, depending on your registrar).
-  - Value: Paste the DNS name of your Lightsail load balancer.
-  - TTL: Set an appropriate value (e.g., 300 seconds).
-  - Save the changes.
+    - Name: @ (or leave it blank, depending on your registrar).
+    - Value: Paste the DNS name of your Lightsail load balancer.
+    - TTL: Set an appropriate value (e.g., 300 seconds).
+    - Save the changes.
 
 ## 5. Test Your Setup
 1. Wait for DNS propagation (this can take a few minutes to 48 hours).
