@@ -10,16 +10,15 @@ Here's a detailed guide to help you through the process:
 1. Log in to your AWS Management Console.
 2. Navigate to Lightsail.
 3. Create an instance:
+   * Choose the region where you want your instance to be located.
     
-    * Choose the region where you want your instance to be located.
+   * Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (Here Wordpress is used ).
     
-    * Select a blueprint (OS or application). For a web server, you can choose Linux/Unix and then select the appropriate app or stack (Here Wordpress is used ).
+   * Choose an instance plan based on your needs.
     
-    * Choose an instance plan based on your needs.
+   * Name your instance (e.g., webserver-1).
     
-    * Name your instance (e.g., webserver-1).
-    
-    * Create the instance.
+   * Create the instance.
 
       **Screenshots** :
       ![image](https://github.com/AmalSunny992/AWS/assets/169422802/00c862c6-1a8c-49e4-a35f-8505aeab8967)
@@ -30,7 +29,7 @@ Here's a detailed guide to help you through the process:
 
 4. Repeat the process for the second instance (e.g., webserver-2).
 
-**Step 2**: Configure Your Web Servers
+**Step 2**: Configure Your Web Servers:
     
     * Connect to each instance via SSH from the Lightsail console.
     
