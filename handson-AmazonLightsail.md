@@ -34,7 +34,6 @@ Here's a detailed guide to help you through the process:
 **Step 2**: Attach Instances to the Load Balancer
 
 1. After the load balancer is created, go to its management page.
-
 2. Attach your instances (webserver-1 and webserver-2) to the load balancer.
 
 ## 3. Configure SSL/TLS Certificate for the Load Balancer
