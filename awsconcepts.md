@@ -139,48 +139,16 @@ Data Catalog: Glue Data Catalog acts as a central metadata repository, making it
 
 ETL Jobs: Glue allows you to create and run ETL jobs using Python or Scala, making it accessible for data engineers and analysts.
 
-## Amazon Resource Names
+## 23. Amazon Resource Names
 Amazon Resource Names (ARNs) are unique identifiers for AWS resources, essential for unambiguous resource specification. ARNs are utilized in IAM policies, Amazon RDS tags, and API calls.
 
-Amazon EC2 (Elastic Compute Cloud ):
-Amazon EC2 provides resizable compute capacity in the cloud. It allows you to run virtual servers for various purposes, ranging from web applications to complex data processing.
-
-Amazon S3 (Simple Storage Service):
-Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. It is used to store and retrieve any amount of data from anywhere on the web.
-
-Amazon RDS (Relational Database Service)
-Amazon RDS simplifies the setup, operation, and scaling of a relational database. It supports several database engines, including MySQL, PostgreSQL, and SQL Server, making it easier to set up, operate, and scale a relational database in the cloud.
-
-Amazon VPC (Virtual Private Cloud)
-Amazon VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment.
-
-Auto Scaling
+## 23. Auto Scaling
 Auto Scaling allows you to automatically adjust the number of compute resources in your Auto Scaling group. It helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.
 
-Elastic Load Balancing
-Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses, within one or more availability zones.
-
-Amazon DynamoDB
+## 23. Amazon DynamoDB
 Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It is a key-value and document database that delivers single-digit millisecond performance at any scale.
 
-AWS Lambda
-AWS Lambda lets you run code without provisioning or managing servers. You can run your code in response to events and automatically manage compute resources, making it easy to build applications that respond quickly to new information.
-
-Amazon CloudWatch
-Amazon CloudWatch monitors your AWS resources and the applications you run on the cloud. You can use CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources.
-
-AWS CloudFormation
-AWS CloudFormation provides a common language for describing and provisioning all the infrastructure resources in your cloud environment. It allows you to use a simple YAML or JSON file to model and provision, in an automated and secure manner, all the resources needed for your applications.
-
-Identity and Access Management (IAM)
-IAM enables secure management of access to AWS services. Through users, groups, and roles, IAM policies define permissions, evaluated when users make requests.
-
-IAM Policies
-Policies, entities within AWS, define user and resource permissions. AWS assesses policies during requests, ensuring appropriate access control.
-
-AWS Troubleshooting IAM
-Troubleshooting IAM involves meticulous policy analysis. Ensure policies grant required permissions. Use AWS Policy Simulator to simulate policy effects, aiding policy refinement.
-
+# Conclusion
 These concepts are fundamental to understanding how AWS services work together to build scalable, reliable, and secure cloud applications and infrastructures.
 
 Essential Commands
