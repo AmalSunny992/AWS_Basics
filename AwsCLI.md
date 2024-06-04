@@ -1,19 +1,33 @@
+# AWS CLI 
+## Essential Commands
+Configures your AWS CLI with your AWS access key, secret key, default region, and output format. 
 
-Essential Commands
-Configures your AWS CLI with your AWS access key, secret key, default region, and output format. aws configure
+```aws configure```
 
-Displays information about available AWS CLI commands and their usage. aws help
+Displays information about available AWS CLI commands and their usage. 
 
-Identity and Access Management (IAM) Commands:
-Creates a new IAM user. aws iam create-user
+```aws help```
 
-Creates a new IAM group. aws iam create-group
+## Identity and Access Management (IAM) Commands:
+Creates a new IAM user. 
 
-Creates a new IAM role. aws iam create-role
+```aws iam create-user```
 
-Attaches an IAM policy to a user. aws iam attach-user-policy
+Creates a new IAM group. 
 
-Attaches an IAM policy to a group. aws iam attach-group-policy
+```aws iam create-group```
+
+Creates a new IAM role. 
+
+```aws iam create-role```
+
+Attaches an IAM policy to a user. 
+
+```aws iam attach-user-policy```
+
+Attaches an IAM policy to a group. 
+
+```aws iam attach-group-policy'''
 
 Attaches an IAM policy to a role. aws iam attach-role-policy
 
