@@ -1,100 +1,187 @@
-# AWS CLI 
-## Essential Commands
-Configures your AWS CLI with your AWS access key, secret key, default region, and output format. 
+# Learning AWS CLI Commands
 
-```aws configure```
+This document provides an overview of common AWS CLI commands with examples to help you get started with managing AWS resources from the command line.
 
-Displays information about available AWS CLI commands and their usage. 
+## Table of Contents
 
-```aws help```
+- [Introduction](#introduction)
+- [AWS CLI Configuration](#aws-cli-configuration)
+- [Common AWS CLI Commands](#common-aws-cli-commands)
+  - [IAM](#iam)
+    - [Create User](#create-user)
+    - [List Users](#list-users)
+  - [S3](#s3)
+    - [Create Bucket](#create-bucket)
+    - [List Buckets](#list-buckets)
+    - [Upload File](#upload-file)
+    - [Download File](#download-file)
+  - [EC2](#ec2)
+    - [Launch Instance](#launch-instance)
+    - [List Instances](#list-instances)
+    - [Stop Instance](#stop-instance)
+    - [Terminate Instance](#terminate-instance)
+  - [RDS](#rds)
+    - [Create DB Instance](#create-db-instance)
+    - [List DB Instances](#list-db-instances)
+- [Useful Resources](#useful-resources)
 
-## Identity and Access Management (IAM) Commands:
-Creates a new IAM user. 
+## Introduction
 
-```aws iam create-user```
+The AWS Command Line Interface (CLI) is a unified tool to manage AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
 
-Creates a new IAM group. 
+## AWS CLI Configuration
 
-```aws iam create-group```
+Before using AWS CLI commands, you need to configure your AWS CLI with your credentials.
 
-Creates a new IAM role. 
+```bash
+aws configure
+```
 
-```aws iam create-role```
+You will be prompted to enter your AWS Access Key ID, Secret Access Key, default region, and default output format.
 
-Attaches an IAM policy to a user. 
+## Common AWS CLI Commands
+### IAM
+#### Create User
 
-```aws iam attach-user-policy```
+Create a new IAM user.
 
-Attaches an IAM policy to a group. 
+```bash
+aws iam create-user --user-name USERNAME
+```
 
-```aws iam attach-group-policy'''
+Example:
+bash
+```
+aws iam create-user --user-name devops-user
+```
+#### List Users
+List all IAM users.
 
-Attaches an IAM policy to a role. aws iam attach-role-policy
+bash
+```
+aws iam list-users
+```
 
-Lists all IAM users in your account. aws iam list-users
+Example:
 
-List all IAM groups in your account aws iam list-groups
+```bash
+aws iam list-users
+```
+### S3
+#### Create Bucket
+Create a new S3 bucket.
 
-Lists all IAM roles in your account. aws iam list-roles
+```bash
+aws s3 mb s3://BUCKET_NAME
+```
+Example:
 
-EC2 (Elastic Compute Cloud) Commands:
-Lists all EC2 instances in your account. aws ec2 describe-instances
+```bash
+aws s3 mb s3://my-unique-bucket-name
+```
+#### List Buckets
+List all S3 buckets.
 
-Launches a new EC2 instance. aws ec2 run-instances
+```bash
+aws s3 ls
+```
+Example:
 
-Starts an existing EC2 instance. aws ec2 start-instances
+```bash
+aws s3 ls
+```
+#### Upload File
+Upload a file to an S3 bucket.
 
-Stops a running EC2 instance. aws ec2 stop-instances
+```bash
+aws s3 cp FILE_PATH s3://BUCKET_NAME
+```
+Example:
 
-Terminates an EC2 instance. aws ec2 terminate-instances
+```bash
+aws s3 cp myfile.txt s3://my-unique-bucket-name
+```
+#### Download File
+Download a file from an S3 bucket.
 
-S3 (Simple Storage Service) Commands:
-Lists all S3 buckets in your account. aws s3 ls
+```bash
+aws s3 cp s3://BUCKET_NAME/FILE_PATH LOCAL_PATH
+```
+Example:
 
-Creates a new S3 bucket. aws s3 mb
+```bash
+aws s3 cp s3://my-unique-bucket-name/myfile.txt ./myfile.txt
+```
+### EC2
+#### Launch Instance
+Launch a new EC2 instance.
 
-Copies files or directories to/from S3. aws s3 cp
+```bash
+aws ec2 run-instances --image-id IMAGE_ID --count 1 --instance-type INSTANCE_TYPE --key-name KEY_NAME --security-group-ids SECURITY_GROUP_ID --subnet-id SUBNET_ID
+```
+Example:
 
-Synchronizes files and directories to S3. aws s3 sync
+```bash
+aws ec2 run-instances --image-id ami-0abcdef1234567890 --count 1 --instance-type t2.micro --key-name my-key-pair --security-group-ids sg-0123456789abcdef0 --subnet-id subnet-0123456789abcdef0
+```
+#### List Instances
+List all EC2 instances.
 
-Deletes files or objects from S3. aws s3 rm
+```bash
+aws ec2 describe-instances
+```
+Example:
 
-CloudFormation Commands:
-Creates a new CloudFormation stack. aws cloudformation create-stack
+```bash
+aws ec2 describe-instances
+```
+#### Stop Instance
+Stop a running EC2 instance.
 
-Updates an existing CloudFormation stack. aws cloudformation update-stack
+```bash
+aws ec2 stop-instances --instance-ids INSTANCE_ID
+```
+Example:
+```bash
+aws ec2 stop-instances --instance-ids i-0123456789abcdef0
+```
 
-Deletes a CloudFormation stack. aws cloudformation delete-stack
+#### Terminate Instance
+Terminate an EC2 instance.
 
-Lambda Commands:
-Lists all Lambda functions in your account. aws lambda list-functions
+```bash
+aws ec2 terminate-instances --instance-ids INSTANCE_ID
+```
+Example:
+```bash
+aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
+```
+### RDS
+#### Create DB Instance
+Create a new RDS DB instance.
 
-Creates a new Lambda function. aws lambda create-function
+```bash
+aws rds create-db-instance --db-instance-identifier DB_INSTANCE_IDENTIFIER --db-instance-class DB_INSTANCE_CLASS --engine ENGINE --master-username MASTER_USERNAME --master-user-password MASTER_USER_PASSWORD --allocated-storage ALLOCATED_STORAGE
+```
+Example:
 
-Invokes a Lambda function. aws lambda invoke
+```bash
+aws rds create-db-instance --db-instance-identifier mydbinstance --db-instance-class db.t2.micro --engine mysql --master-username admin --master-user-password password123 --allocated-storage 20
+```
 
-These commands are just the basics and cover a wide range of AWS services. For specific command options and syntax, you can always refer to the official AWS CLI documentation or use the aws help command followed by the service name, e.g., aws ec2 help.
+#### List DB Instances
+List all RDS DB instances.
 
-Kubernetes Contexts
-Managing Kubernetes contexts is vital for multiple cluster management:
+```bash
+aws rds describe-db-instances
+```
+Example:
 
-Get available contexts:
+```bash
+aws rds describe-db-instances
+```
 
-kubectl config get-contexts
-
-Switch context:
-
-kubectl config use-context <context-name>
-
-Updating Cluster Configuration
-Update Kubernetes configuration to connect to an AWS EKS cluster:
-
-Update cluster configuration:
-
-aws eks update-kubeconfig --region <region-name> --name <cluster-name>
-
-Switch to the updated context:
-
-kubectl config use-context arn:aws:eks:<region-name>:<arn-id>:cluster/<cluster-name>
-
+## Useful Resources
+- AWS CLI Documentation
+- AWS CLI Command Reference
 
