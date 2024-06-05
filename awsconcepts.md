@@ -1,5 +1,49 @@
 # Amazon Web Services (AWS) Concepts
-Amazon Web Services (AWS) is a leading cloud service provider that offers a wide range of cloud computing services. Below are some fundamental concepts to understand when working with AWS:
+
+Welcome to the Learn Amazon AWS repository! This file is designed to help you understand the basic concepts of Amazon Web Services (AWS)
+
+## Table of Contents
+[Introduction](#introduction)
+
+1. [Regions and Availability Zones](#1-regions-and-availability-zones)
+2. [EC2 (Elastic Compute Cloud)](#2-ec2-elastic-compute-cloud)
+3. [S3 (Simple Storage Service)](#3-s3-simple-storage-service)
+4. [IAM (Identity and Access Management)](#4-iam-identity-and-access-management)
+5. [RDS (Relational Database Service)](#5-rds-relational-database-service)
+6. [VPC (Virtual Private Cloud)](#6-vpc-virtual-private-cloud)
+7. [Lambda](#7-lambda)
+8. [Elastic Load Balancing (ELB)](#8-elastic-load-balancing-elb)
+9. [Amazon Route 53](#9-amazon-route-53)
+10. [AWS Elastic Beanstalk](#10-aws-elastic-beanstalk)
+11. [ECS (Elastic Container Service) and EKS (Elastic Kubernetes Service)](#11-ecs-elastic-container-service-and-eks-elastic-kubernetes-service)
+12. [Amazon CloudWatch](#12-amazon-cloudwatch)
+13. [Amazon Elasticsearch Service](#13-amazon-elasticsearch-service)
+14. [AWS CloudFormation](#14-aws-cloudformation)
+15. [Serverless Application Model (SAM)](#15-serverless-application-model-sam)
+16. [Amazon VPC Peering](#16-amazon-vpc-peering)
+17. [Amazon EFS (Elastic File System)](#17-amazon-efs-elastic-file-system)
+18. [Amazon SNS (Simple Notification Service)](#18-amazon-sns-simple-notification-service)
+19. [AWS Direct Connect](#19-aws-direct-connect)
+20. [AWS Organizations](#20-aws-organizations)
+21. [AWS Lambda Layers](#21-aws-lambda-layers)
+22. [AWS Glue](#22-aws-glue)
+23. [Amazon Resource Names](#23-amazon-resource-names)
+24. [Auto Scaling](#24-auto-scaling)
+25. [Amazon DynamoDB](#25-amazon-dynamodb)
+26. [Tips & Tricks](#26-tips--tricks)
+    - [Cost Management](#1-cost-management)
+    - [Security Best Practices](#2-security-best-practices)
+    - [Performance Optimization](#3-performance-optimization)
+    - [Resource Tagging](#4-resource-tagging)
+    - [Organize Resources with Tags](#5-organize-resources-with-tags)
+    - [Automate Everything](#6-automate-everything)
+    - [Set Up Billing Alarms](#7-set-up-billing-alarms)
+    - [Plan for Disaster Recovery](#8-plan-for-disaster-recovery)
+
+[Conclusion](#conclusion)
+
+## Introduction
+Amazon Web Services (AWS) is a leading cloud service provider that offers a wide range of cloud computing services. Below are some fundamental concepts to understand when working with AWS
 
 ## 1. Regions and Availability Zones
 Region: A geographic area that consists of multiple Availability Zones. Each AWS region is a separate geographic area, isolated from others, and is designed to provide high availability and low latency.
@@ -142,13 +186,13 @@ ETL Jobs: Glue allows you to create and run ETL jobs using Python or Scala, maki
 ## 23. Amazon Resource Names
 Amazon Resource Names (ARNs) are unique identifiers for AWS resources, essential for unambiguous resource specification. ARNs are utilized in IAM policies, Amazon RDS tags, and API calls.
 
-## 23. Auto Scaling
+## 24. Auto Scaling
 Auto Scaling allows you to automatically adjust the number of compute resources in your Auto Scaling group. It helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.
 
-## 23. Amazon DynamoDB
+## 25. Amazon DynamoDB
 Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It is a key-value and document database that delivers single-digit millisecond performance at any scale.
 
-## Tips & Tricks
+## 26. Tips & Tricks
 ### 1. Cost Management:
 AWS Cost Explorer: Utilize AWS Cost Explorer to visualize and understand your AWS spending patterns. Analyze costs by service or region, enabling effective budget management.
 
