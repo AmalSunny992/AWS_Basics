@@ -1,6 +1,6 @@
 # Learn Amazon AWS (In progress)
 
-Welcome to the Learn Amazon AWS repository! This repository is designed to help you understand and practice the basic concepts of Amazon Web Services (AWS) through tutorials, examples, and hands-on exercises.
+Welcome to the Learn Amazon AWS repository! This repository is designed to help you understand and practice the basic concepts of Amazon Web Services (AWS).
 
 ## Table of Contents
   1. [AWS Concepts](./awsconcepts.md)
@@ -10,7 +10,7 @@ Welcome to the Learn Amazon AWS repository! This repository is designed to help 
   5. [Ec2](./ec2.md)
   6. [VPC](./vpc.md)
   7. [RDS VS Dynamo](./rds-vs-dynamo.md)
-  8. [License](#license)
+  8. 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
