@@ -1,6 +1,6 @@
 # Amazon Web Services (AWS) Concepts
 
-Welcome to the Learn Amazon AWS repository! This file is designed to help you understand the basic concepts of Amazon Web Services (AWS)
+This file is designed to help you understand the basic concepts of Amazon Web Services (AWS).
 
 ## Table of Contents
 [Introduction](#introduction)
