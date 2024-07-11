@@ -1,6 +1,6 @@
 ![Amazon AWS Badge](https://img.shields.io/badge/Amazon%20AWS-232F3E?logo=amazonaws&logoColor=fff&style=for-the-badge)
 
-# Learn Amazon AWS (In progress)
+# Learn Amazon AWS
 
 Welcome to the Learn Amazon AWS repository! This repository is designed to help you understand and practice the basic concepts of Amazon Web Services (AWS).
 
