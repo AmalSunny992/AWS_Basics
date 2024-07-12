@@ -4,8 +4,6 @@
 
 Welcome to the Learn Amazon AWS repository! This repository is designed to help you understand and practice the basic concepts of Amazon Web Services (AWS).
 
-Happy Learning!
-
 ## Table of Contents
   1. [Introduction](./intro.md)
   2. [AWS Concepts](./awsconcepts.md)
