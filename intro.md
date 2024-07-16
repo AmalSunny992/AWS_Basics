@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/692666ed-a3d5-46f8-9b00-afd96f00a0a2)# Introduction to AWS
+# Introduction to AWS
 
 ## Objectives
 - Get an overview of AWS services
