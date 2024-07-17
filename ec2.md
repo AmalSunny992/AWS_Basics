@@ -126,14 +126,33 @@ Sign in with your AWS account credentials.
 
 In the AWS Management Console, select "Services" from the top menu, then select "EC2" under the "Compute" category.
 
+![image](https://github.com/user-attachments/assets/0edb2a63-d089-4f97-94c6-9f68e941b7b2)
+![image](https://github.com/user-attachments/assets/8d434301-52ed-4582-88ee-a817ba5754dd)
+
 #### Launch an Instance:
 Click the "Launch Instance" button.
+
+![image](https://github.com/user-attachments/assets/96eb3487-8301-472d-92de-f5a0e7b15482)
 
 #### Choose an Amazon Machine Image (AMI):
 Select an appropriate AMI. For example, choose "Amazon Linux 2 AMI" for a standard Linux distribution.
 
+![image](https://github.com/user-attachments/assets/66b06c29-d617-4973-a974-08d832eb0f0c)
+
 #### Choose an Instance Type:
 Select an instance type based on your requirements (e.g., t2.micro for free tier eligible).
+![image](https://github.com/user-attachments/assets/774ddddd-6b1a-472b-bf3b-a0e6dd783823)
+
+#### Select a Key Pair:
+
+Create a new key pair or select an existing one.
+
+![image](https://github.com/user-attachments/assets/3cfcfe4f-000f-4627-9377-44d1228c1f09)
+
+
+Download the key pair file (.ppk) and store it securely. You will need this file to connect to your instance.
+
+![image](https://github.com/user-attachments/assets/6aa45515-ac11-4ca5-b7e1-5d328955783d)
 
 #### Configure Instance Details:
 Leave the default settings or configure the instance details as needed.
@@ -146,6 +165,9 @@ Configure the storage settings as required. The default settings are usually suf
 
 Click "Next: Add Tags."
 
+![image](https://github.com/user-attachments/assets/31a9b8f2-e5ad-4cee-b233-1f470a0ca531)
+
+
 #### Add Tags:
 
 (Optional) Add any tags to help manage your instances.
@@ -154,6 +176,9 @@ Click "Next: Add Tags."
 Configure Security Group:
 
 Create a new security group or select an existing one.
+
+![image](https://github.com/user-attachments/assets/7ab0e452-010f-42e7-ba53-3c8728e0e711)
+
 
 #### Add a rule to allow SSH access:
 
@@ -165,24 +190,19 @@ Port Range: 22
 
 Source: Custom (or My IP to restrict access to your IP address)
 
+![image](https://github.com/user-attachments/assets/c9254ff9-7ce5-4a31-941c-d673f9ffe0db)
+
 #### Review and Launch:
 
 Review your instance configuration.
 
 Click "Launch."
 
-#### Select a Key Pair:
-
-Create a new key pair or select an existing one.
-
-Download the key pair file (.ppk) and store it securely. You will need this file to connect to your instance.
-
-Click "Launch Instances."
-
 #### View Instances:
 
 Click "View Instances" to see your running instances.
 
+![image](https://github.com/user-attachments/assets/06e5c46b-2a00-4969-87d3-677d125e0a67)
 
 ### Step 3: Connect to Your EC2 Instance Using PuTTY
 
