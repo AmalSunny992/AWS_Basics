@@ -27,14 +27,17 @@ AWS Lambda is a serverless computing service that lets you run code without prov
 - Open the Lambda Dashboard:
     - Go to the AWS Management Console.
     - Select "Lambda" from the services menu.
+![image](https://github.com/user-attachments/assets/426eaf16-13f8-465a-af4d-f8c43fb7fe8e)
 
 - Create a Function:
     - Click on "Create function".
+![image](https://github.com/user-attachments/assets/95be14a6-4b02-4ec0-98e2-e50fd51e53dd)
 
 - Choose an authoring method:
     - Author from scratch: Create a new function from scratch.
     - Use a blueprint: Use a pre-configured blueprint for common use cases.
     - Browse serverless app repository: Deploy a pre-built application from the AWS Serverless Application Repository.
+![image](https://github.com/user-attachments/assets/54b4de51-2b71-4f82-9c34-10c4ccabef97)
 
 - Configure Function Settings:
     - Function name: Enter a name for your function.
@@ -42,6 +45,7 @@ AWS Lambda is a serverless computing service that lets you run code without prov
     - Role: Choose an execution role:
         - Create a new role with basic Lambda permissions.
         - Use an existing role: If you already have an IAM role with the necessary permissions.
+![image](https://github.com/user-attachments/assets/33e9fc47-68af-4179-bfaf-cdd8e5798e5b)
 
 - Write the Code:
     - Use the inline code editor or upload a .zip file with your code.
@@ -54,9 +58,11 @@ def lambda_handler(event, context):
         'body': 'Hello, World!'
     }
 ```
+![image](https://github.com/user-attachments/assets/1c74906d-65a3-4cb2-a0af-cf3a655fa745)
 
 - Configure Function:
     - Set environment variables, configure memory and timeout settings, and add any required layers.
+![image](https://github.com/user-attachments/assets/28030367-7d89-4155-93d0-1cfa4e32e50d)
 
 - Deploy the Function:
     - Click "Deploy" to save the function.
@@ -69,6 +75,7 @@ def lambda_handler(event, context):
     - Run the Test:
         - Click on "Test" to execute the function with the test event.
         - Check the execution results, including logs and response.
+![image](https://github.com/user-attachments/assets/ac63331d-1279-4abb-a2f1-78014a53bfb9)
 
 - Setting up Triggers:
     - Add a Trigger:
@@ -133,7 +140,8 @@ def lambda_handler(event, context):
 
 - Test the Function:
     - Upload an image to the S3 bucket.
-    - Check the thumbnails folder in the S3 bucket for the generated thumbnail.
+    - Check the thumbnails folder in the S3 bucket for the generated thumbnail
+
 
 ## Summary
 In this lesson, you learned about AWS Lambda, how to create and deploy Lambda functions, and how to set up triggers to automate serverless workflows. AWS Lambda allows you to run code without provisioning or managing servers, making it an essential service for serverless computing.
