@@ -61,15 +61,29 @@ Session management and user profiles.
     - Open the DynamoDB console.
     - Click on "Create table".
     - Specify table name, primary key attributes, and optionally configure settings like secondary indexes, read/write capacity, and encryption.
+![image](https://github.com/user-attachments/assets/ed726479-81a5-413e-880e-9e0a1c4fc026)
+![image](https://github.com/user-attachments/assets/36039a92-1f6c-40f4-82e5-ded84700d726)
+![image](https://github.com/user-attachments/assets/e63c63b1-7bcf-4bd5-8a10-40e4b1403ad7)
+![image](https://github.com/user-attachments/assets/8036d4e1-b37d-4879-8b72-be021e567d5f)
+![image](https://github.com/user-attachments/assets/ac4eb1e2-d179-4ecd-842b-059ee4f1d5cd)
 
 - Add Items to the Table:
     - Select the created table.
     - Click on the "Items" tab.
     - Click "Create item" and use the JSON editor or form to add data.
+![image](https://github.com/user-attachments/assets/4e4b93e6-a58d-48f6-990e-eb47c65f7974)
+![image](https://github.com/user-attachments/assets/8c4a268c-101a-4125-b8b0-acdf2829a9a7)
+![image](https://github.com/user-attachments/assets/96d055c8-8e3e-4026-9a74-e55ba45fc58f)
+![image](https://github.com/user-attachments/assets/8efae179-c11e-4667-a03f-44ca4a1761eb)
+![image](https://github.com/user-attachments/assets/65754ccd-9a19-446a-b4d8-655b83a765f0)
 
 - Query and Scan:
     - Use the "Query" operation to find items based on primary key values.
     - Use the "Scan" operation to retrieve all items from a table.
+![image](https://github.com/user-attachments/assets/5e3333c6-5467-4a3f-8bbb-ccb3b6cc11a4)
+![image](https://github.com/user-attachments/assets/e0e3c18d-1201-4b77-a44e-c2b208a606be)
+![image](https://github.com/user-attachments/assets/ed14047b-daf1-4963-bf88-3289667ed792)
+![image](https://github.com/user-attachments/assets/655413c3-7c73-4bc8-8a58-7edf46ca9214)
 
 - Using the AWS CLI or SDK:
     - Install and configure the AWS CLI.
@@ -139,17 +153,21 @@ Follow these steps to create and configure an RDS instance:
 - Open the RDS Dashboard:
     - Go to the AWS Management Console.
     - Select "RDS" from the services menu.
+![image](https://github.com/user-attachments/assets/3cb7b750-ecb4-4b97-8ab3-481bf8e21aaa)
 
 - Create a Database:
     - Click on the "Create database" button.
     - Choose a database creation method: "Standard create" or "Easy create".
     - Select the engine type (e.g., MySQL, PostgreSQL, MariaDB, Oracle, SQL Server).
     - Choose a template: Production, Dev/Test, or Free tier.
+![image](https://github.com/user-attachments/assets/db343029-93f1-4496-9fa8-9aaa51593d5b)
+![image](https://github.com/user-attachments/assets/a049be45-3e18-4b33-8d7c-4f41e11baaac)
 
 - Specify DB Details:
     - Configure instance specifications (e.g., DB instance identifier, master username, and password).
     - Select instance size (e.g., db.t2.micro for free tier).
     - Configure storage options (e.g., allocated storage, auto-scaling).
+![image](https://github.com/user-attachments/assets/f72066ed-57e4-4ccc-b435-88b7ad48ba9f)
 
 - Configure Advanced Settings:
     - Set network and security options (e.g., VPC, subnet, security groups).
@@ -159,10 +177,14 @@ Follow these steps to create and configure an RDS instance:
 - Launch the DB Instance:
     - Review the configuration and click "Create database".
     - Wait for the instance status to become "Available".
+![image](https://github.com/user-attachments/assets/1fc23d87-38f8-46b0-8958-0577bd4c0b47)
+![image](https://github.com/user-attachments/assets/69b7c849-a86a-412f-a7e5-83d7810cd45f)
+![image](https://github.com/user-attachments/assets/9a0c4bc4-8777-416f-9410-c3e899a7befb)
 
 - Connect to the RDS Instance:
     - Obtain the endpoint from the RDS dashboard.
     - Use a database client (e.g., MySQL Workbench, pgAdmin) to connect to the RDS instance using the endpoint, master username, and password.
+![image](https://github.com/user-attachments/assets/d4992eaa-fd69-4426-a8ce-830283156731)
 
 ## Costs
 Costs for both services depend on the chosen configurations and usage patterns:
